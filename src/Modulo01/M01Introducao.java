@@ -25,7 +25,7 @@ package Modulo01;
 
 
 
-public class Introducao {
+public class M01Introducao {
     public static void main(String[] args) {
         System.out.println("My First Class Java..");
     }
