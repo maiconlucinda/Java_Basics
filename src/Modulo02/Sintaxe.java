@@ -1,3 +1,5 @@
+package Modulo02;
+
 /* PORQUE CLASSES? */
 /* Chamamos de "classe" porque ela representa uma classificão genérica de um tipo de objeto.
 * Seria como dizer que um determinado carro é classe A, ou seja, ele tem características (atributos)
@@ -15,7 +17,7 @@
 /* Esse metodo vai determinar se nossa classe é uma classe de inicialização ou de execução */
 
 
-public class M02AnatomiaDasClasses {
+public class Sintaxe {
     public static void main(String[] args) {
         System.out.println("My Second Class Java..");
     }
@@ -38,18 +40,18 @@ public class M02AnatomiaDasClasses {
 /* VARIAVEIS E METODOS */
 /*VARIAVEIS*/
 /* Como identificar a diferenca entre, declaracao de variaveis e metodos em Java? Existe uma estrutura para isso */
-int idade = 25;
-double altura = 1.98;
-Dog spike; // Essa ultima nao tem valor atribuido
+//int idade = 25;
+//double altura = 1.98;
+//Dog spike; // Essa ultima nao tem valor atribuido
 
 // Toda variavel deve ser escrita com letras minuscula, se for uma palavra composta, a segunda palavra deve comecar com letra maiuscula
 // Para definir variáveis que nunca terão seus valores alterados, precisamos simplesmente de definir o nome com letras maiusculas
-String BR = "Brasil";
-double PI = 3.14;
-int ESTADOS_BRASILEIROS = 27;
+//String BR = "Brasil";
+//double PI = 3.14;
+//int ESTADOS_BRASILEIROS = 27;
 
 // Somente se escrito em maiusculo nao determinada que ela nao podera ser alterada, o que determina é a palavra final na frente
-final String Testando = "Brasil";
+//final String Testando = "Brasil";
 
 /* METODOS */
 /* A diferenca do metodos é que na frente, ao invés de ter tipo, teremos o que ele retorna */
@@ -58,6 +60,8 @@ final String Testando = "Brasil";
 
 
 
+/* INDENTACAO EM JAVA */
+// A identacão em Java não é algo importante como é no Python, em Java a indentação tá mais ligada com a questão visual do que com a questão do funcionamento do código
 
 
 

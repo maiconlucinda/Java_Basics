@@ -1,3 +1,5 @@
+package Modulo01;
+
 /* HISTORIA DO JAVA */
 /* A ideia inicial era ter uma solucao para dispositivos eletronicos intgligentes.
 * A Sun financiou uma pesquisa que teve o nome Green em 1991.
@@ -23,7 +25,7 @@
 
 
 
-public class M01Basics {
+public class Introducao {
     public static void main(String[] args) {
         System.out.println("My First Class Java..");
     }
