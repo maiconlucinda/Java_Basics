@@ -1,28 +1,40 @@
 package Modulo02;
 
 public class ContaCorrente {
-    private String numeroConta;
-    private String numeroAgencia;
+    private int numeroConta;
+    private int numeroAgencia;
     private String nomeCliente;
     private String dataNascimento;
-    private float saldoConta;
+    private static float saldoConta;
 
-    public ContaCorrente(String numeroConta, String numeroAgencia, String nomeCliente, String dataNascimento, float saldoConta) {
+    public ContaCorrente(int numeroConta, int numeroAgencia, String nomeCliente, String dataNascimento, float saldoConta) {
         this.numeroConta = numeroConta;
         this.numeroAgencia = numeroAgencia;
         this.nomeCliente = nomeCliente;
         this.dataNascimento = dataNascimento;
-        this.saldoConta = saldoConta;
+        ContaCorrente.saldoConta = saldoConta;
     }
 
-    public float SacarValor(float valor){
-        this.saldoConta = this.saldoConta - valor;
-        return this.saldoConta;
+    public static boolean depositar(float valor){
+        saldoConta = saldoConta + valor;
+        return true;
     }
 
-    public String transferirValor(float valor){
-        this.saldoConta = this.saldoConta - valor;
-        return "Transferencia realizada com sucesso";
+
+    public boolean SacarValor(float valor){
+        if(valor <= saldoConta){
+            saldoConta -= valor;
+            return true;
+        }
+        return false;
+    }
+
+    public boolean transferirValor(ContaCorrente contaCorrente, float valor){
+        if(valor <= saldoConta){
+            ContaCorrente.depositar(valor);
+            return true;
+        }
+        return false;
     }
 
     public void cancelarContaComJustificativa(float valor){
@@ -30,12 +42,12 @@ public class ContaCorrente {
     }
 
     public float consultarExtrato(float valor){
-        this.saldoConta = this.saldoConta - valor;
-        return this.saldoConta;
+        saldoConta = saldoConta - valor;
+        return saldoConta;
     }
 
     public float consultarSaldo(){
-        return this.saldoConta;
+        return saldoConta;
     }
 
 
