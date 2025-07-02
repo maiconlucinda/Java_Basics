@@ -17,7 +17,7 @@ package Modulo02;
 /* Esse metodo vai determinar se nossa classe é uma classe de inicialização ou de execução */
 
 
-public class M02Sintaxe {
+public class ATeoriaSintaxe {
     public static void main(String[] args) {
         System.out.println("My Second Class Java..");
     }

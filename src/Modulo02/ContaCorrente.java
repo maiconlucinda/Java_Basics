@@ -5,19 +5,18 @@ public class ContaCorrente {
     private int numeroAgencia;
     private String nomeCliente;
     private String dataNascimento;
-    private static float saldoConta;
+    private float saldoConta;
 
     public ContaCorrente(int numeroConta, int numeroAgencia, String nomeCliente, String dataNascimento, float saldoConta) {
         this.numeroConta = numeroConta;
         this.numeroAgencia = numeroAgencia;
         this.nomeCliente = nomeCliente;
         this.dataNascimento = dataNascimento;
-        ContaCorrente.saldoConta = saldoConta;
+        this.saldoConta = saldoConta;
     }
 
-    public static boolean depositar(float valor){
+    public void depositar(float valor){
         saldoConta = saldoConta + valor;
-        return true;
     }
 
 
@@ -29,9 +28,9 @@ public class ContaCorrente {
         return false;
     }
 
-    public boolean transferirValor(ContaCorrente contaCorrente, float valor){
-        if(valor <= saldoConta){
-            ContaCorrente.depositar(valor);
+    public boolean transferirValor(ContaCorrente destino, float valor){
+        if(this.SacarValor(valor)){
+            destino.depositar(valor);
             return true;
         }
         return false;
