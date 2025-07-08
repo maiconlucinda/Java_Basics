@@ -10,6 +10,7 @@ public class ContaCorrente {
 
 
     public ContaCorrente(int numeroConta, int numeroAgencia, String nomeCliente, String dataNascimento, float saldoConta) {
+        this.extrato = new Extrato();
         this.numeroConta = numeroConta;
         this.numeroAgencia = numeroAgencia;
         this.nomeCliente = nomeCliente;
@@ -51,7 +52,8 @@ public class ContaCorrente {
     }
 
     public float consultarSaldo(){
-        return saldoConta;
+        System.out.println(this.saldoConta);
+        return 0;
     }
 
 

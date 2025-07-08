@@ -11,8 +11,11 @@ public class Banco {
 
         System.out.println("\nExtrato de Joao");
         contaJoao.consultarExtrato();
+        contaJoao.consultarSaldo();
 
         System.out.println("\nExtrato de Maria");
         contaMaria.consultarExtrato();
+        contaMaria.consultarSaldo();
+
     }
 }
