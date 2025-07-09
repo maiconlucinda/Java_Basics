@@ -1,12 +1,15 @@
 package Modulo02;
 
+import java.time.LocalDate;
+
 public class ContaCorrente {
     private int numeroConta;
     private int numeroAgencia;
     private String nomeCliente;
-    private String dataNascimento;
+    private LocalDate dataNascimento;
     private float saldoConta;
     private Extrato extrato;
+    boolean ativo = true;
 
 
     public ContaCorrente(int numeroConta, int numeroAgencia, String nomeCliente, String dataNascimento, float saldoConta) {
@@ -44,6 +47,7 @@ public class ContaCorrente {
     }
 
     public void cancelarContaComJustificativa(float valor){
+        this.ativo = false;
 
     }
 

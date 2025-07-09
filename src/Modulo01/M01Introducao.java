@@ -30,3 +30,11 @@ public class M01Introducao {
         System.out.println("My First Class Java..");
     }
 }
+
+
+/* MÉTODOO MAIN */
+/* O nome da classe não importa para o Java rodar, no entanto para a JVM iniciar o código, ele vai buscar
+* pelo métodoo Main e esse métodoo precisa ter uma assinatura específica
+*   public static void main(String[] args) - Significa que esse é o métodoo Main e recebe qualquer string que for digitada na CLI através do array Strings, esse array depois recebe o nome de args */
+
+
