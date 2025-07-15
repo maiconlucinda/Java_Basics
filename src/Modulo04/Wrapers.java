@@ -1,10 +1,6 @@
 package Modulo04;
 
-public class Wrapers {
-    public static void main(String[] args) {
-        System.out.println("Understanding Wrapers..");
-    }
-}
+
 
 
 
@@ -32,5 +28,32 @@ public class Wrapers {
  * A classe object é a superclasse raíz de todas as classes em Java
  * Entendendo isso, podemos entender que até mesmo os Wrappers herdam da classe Object */
 
+
+
+public class Wrapers {
+    public static void main(String[] args) {
+
+        /* USANDO O WRAPPERS PARA FAZER CONVERSÃO EXPLICITA */
+        /* Nesse exemplo pode se notar que o número era Double, usando a Classe Wrapper foi possível converter
+         * o valor para inteiro */
+
+        double numeroDouble = 123.56;
+        int numeroInt = (int) numeroDouble;
+        System.out.println(numeroInt); // 123
+
+
+        // Podemos usar os metodos da classe Wrapper
+        Double d = 100.5656;
+        Integer i = d.intValue(); // Estou dizendo que o integer sera o valor inteiro da minha variavel Double
+        System.out.println(i); // 100
+
+
+        // CONVERTENDO STRING PARA INTEGER
+        // Só é possível porque estamos usando um métodoo da classe Integer
+        String num = "100";
+        int i = Integer.parseInt(num);
+        System.out.println(i);
+    }
+}
 
 

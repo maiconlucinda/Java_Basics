@@ -2,8 +2,8 @@ package Modulo02;
 
 public class Banco {
     public static void main(String[] args) {
-        ContaCorrente contaJoao = new ContaCorrente(1234, 1, "Joao", "12/01/2000", 700);
-        ContaCorrente contaMaria = new ContaCorrente(4567, 2, "Maria", "12/01/19080", 500);
+        ContaCorrente contaJoao = new ContaCorrente(1234, 1, "Joao", 700);
+        ContaCorrente contaMaria = new ContaCorrente(4567, 2, "Maria", 500);
 
         contaJoao.transferirValor(contaMaria, 200);
         contaJoao.sacarValor(50);

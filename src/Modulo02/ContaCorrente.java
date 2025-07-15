@@ -12,12 +12,12 @@ public class ContaCorrente {
     boolean ativo = true;
 
 
-    public ContaCorrente(int numeroConta, int numeroAgencia, String nomeCliente, String dataNascimento, float saldoConta) {
+    public ContaCorrente(int numeroConta, int numeroAgencia, String nomeCliente, float saldoConta) {
         this.extrato = new Extrato();
         this.numeroConta = numeroConta;
         this.numeroAgencia = numeroAgencia;
         this.nomeCliente = nomeCliente;
-        this.dataNascimento = dataNascimento;
+       //this.dataNascimento = dataNascimento;
         this.saldoConta = saldoConta;
         extrato.adicionarTransacao("Conta Criada com saldo" + this.saldoConta);
     }
